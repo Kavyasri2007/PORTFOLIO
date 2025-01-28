@@ -1,0 +1,189 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Bhavya| Photographer</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #f5f5f5;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        h2 { margin-bottom: 20px; }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #a45c40;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn:hover { background: #8b4f36; }
+
+        /* Hero Section */
+        .hero {
+            background: url('photographer pic.JPEG') no-repeat center/cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .hero h1 { font-size: 2.5rem; }
+        .hero p { font-size: 1.2rem; margin: 10px 0; }
+
+        /* About Section */
+        .about img {
+            width: 200px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .about p {
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.6;
+        }
+/* Portfolio Section */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+.portfolio-grid img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+    object-fit: cover;
+}
+
+/* Prices Section */
+.price-card img {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+        
+        /* Testimonial */
+        .testimonial img {
+            width: 20px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+        }
+        footer input {
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Baby Bhavya</h1>
+        <p>Your Photographer</p>
+        <p>contact</p>
+        <p>mobile number: 8143828687<br>e-mail : babybhavya116@gmail.com</p>
+        
+    </header>
+
+    <!-- About Section -->
+    <section class="about container">
+        <h2>About Me</h2>
+        <img src="photographer pic.jpeg" alt="Photographer">
+        <p>
+            I am a photographer based in mumbai, specializing in diverse styles of photography, 
+            including brand collaborations. With 7 years of experience,
+             I bring a blend of creativity and passion to every project.
+              Let us craft something beautiful together!
+        </p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio container">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <img src="wedding.jpeg" alt="Wedding">
+            <img src="family.jpeg" alt="Family">
+            <img src="love story.jpeg" alt="Love Story">
+            <img src="portrait.jpeg" alt="Portrait">
+        </div>
+        
+    </section>
+
+    <!-- Prices Section -->
+    <section class="prices container">
+        <h2>Prices</h2>
+        <div class="price-cards">
+            <div class="price-card">
+                <img src="min.jpeg" alt="Minimal Package">
+                <h3>Minimal</h3>
+                <p>7000</p>
+                <p>1 Hour</p>
+                <p>20-40 Photos</p>
+            </div>
+            <div class="price-card">
+                <img src="standard.jpeg" alt="Standard Package">
+                <h3>Standard</h3>
+                <p>14000</p>
+                <p>2 Hours</p>
+                <p>50-70 Photos</p>
+            </div>
+            <div class="price-card">
+                <img src="max.jpeg" alt="Maximum Package">
+                <h3>Maximum</h3>
+                <p>17500</p>
+                <p>2 Hours</p>
+                <p>All Photos</p>
+            </div>
+        </div>
+        
+       
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial container">
+        <h2>What Clients Say</h2>
+        <p>"Working with Mary was an amazing experience! She made me feel confident and the photos turned out beautiful."</p>
+        <h4>Sofia</h4>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact: babybhavya116@gmail.com | +91 8143828687</p>
+        <input type="email" placeholder="Your Email">
+        <button class="btn">Subscribe</button>
+    </footer>
+
+</body>
+</html>
+
